@@ -1,17 +1,19 @@
 import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
+import swal from "sweetalert";
 
 const SingleDonationCard = () => {
-  const [donate, setDonate] = useState([]);
+
+  const [donate, setDonate] = useState({});
 
   const donations = useLoaderData();
   const ParId = useParams();
-  const id = parseInt(ParId.id);
+  const ids = parseInt(ParId.id);
 
   useEffect(() => {
-    const findDonate = donations.find((donate) => donate.id === id);
+    const findDonate = donations.find((donate) => donate.id === ids);
     setDonate(findDonate);
-  }, [id, donations]);
+  }, [ids, donations]);
 
   const {
     picture,
@@ -21,31 +23,52 @@ const SingleDonationCard = () => {
     text_color,
     description,
     price,
-  } = donate;
+    id
+  } = donate || {};
 
   const dynamicStyles = {
-    categoryBackground: {
-      backgroundColor: category_bg,
-      padding: "10px",
-    },
-    cardBackground: {
-      backgroundColor: card_bg,
-    },
     textColor: {
       backgroundColor: text_color,
     },
   };
 
+
+
+  const handleDonatePriceBtn = () => {
+    const addedDonateItem = []
+    const donateItems = JSON.parse(localStorage.getItem('donate'));
+    if (!donateItems) {
+      addedDonateItem.push(donate);
+      localStorage.setItem('donate', JSON.stringify(addedDonateItem));
+      swal("Good job!", "Your Donate Done!", "success");
+    }
+    else {
+      const isExits = donateItems.find(donate => donate.id === id)
+      if (!isExits) {
+        addedDonateItem.push(...donateItems, donate)
+        localStorage.setItem('donate', JSON.stringify(addedDonateItem));
+        swal("Good job!", "You clicked the button!", "success");
+      }
+      else {
+        return swal("Waring!", "You All Ready added this items!", "warning");
+      }
+      
+    }
+
+  }
+
+
   return (
-    <div className="">
+    <div className="flex items-center justify-center">
       <div className="space-y-5 ">
         <img
-          className="w-[900px] h-[500px] md:h-[500px] rounded-lg inline text-center"
+          className="w-[900px] h-[500px] md:h-[500px] rounded-lg inline"
           src={picture}
           alt=""
         />
         <div className="absolute top-[460px] md:top-[459px] rounded-md bg-[#0B0B0B80] h-[120px] w-[670px] md:w-[900px]">
           <button
+            onClick={handleDonatePriceBtn}
             className="mt-5 ml-12 py-5 px-8 rounded-lg text-white"
             style={dynamicStyles.textColor}
           >
