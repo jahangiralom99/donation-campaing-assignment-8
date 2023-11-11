@@ -1,5 +1,5 @@
 import "./Banner.css";
-const Banner = () => {
+const Banner = ({handleSearchBtn}) => {
   return (
     <div className="hero min-h-screen banner-img ">
       <div className="hero-overlay bg-opacity-60 flex items-center justify-center h-screen">
@@ -7,14 +7,16 @@ const Banner = () => {
           <h1 className="text-5xl font-bold text-white">
             I Grow By Helping People In Need
           </h1>
+          <form onSubmit={handleSearchBtn}>
           <input
             className="border p-4 mt-6 rounded-lg "
-            type="text"
+            type="text" name="text"
             placeholder="Search here...."
           />
           <button className="btn hover:bg-red-700 bg-red-600 p-4 rounded-lg text-white px-6">
             Search
           </button>
+          </form>
         </div>
       </div>
     </div>
