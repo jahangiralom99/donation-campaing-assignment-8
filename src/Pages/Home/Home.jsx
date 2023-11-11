@@ -14,6 +14,7 @@ const Home = () => {
     const filtered = donations.filter(item => item.title.toLowerCase().includes(text));
     console.log(filtered);
     setSearchData(filtered)
+    
   }
 
   return ( 
