@@ -21,7 +21,7 @@ const DonationsALl = ({ donation }) => {
     <Link to={`/donations/${id}`}>
       <div
         style={dynamicStyles.cardBackground}
-        className={`rounded-xl  bg-${card_bg}`}
+        className={`rounded-xl`}
       >
         <div className="">
           <img
@@ -39,7 +39,7 @@ const DonationsALl = ({ donation }) => {
           </p>
           <h2
             style={dynamicStyles.textColors}
-            className={`text-xl font-bold bg-[${donation.text_color}]`}
+            className={`text-xl font-bold`}
           >
             {title}
           </h2>

@@ -5,7 +5,7 @@ import { useState } from "react";
 
 const Home = () => {
   const donations = useLoaderData();
-  const [searchData, setSearchData] = useState([])
+  const [searchData, setSearchData] = useState([...donations])
 
   const handleSearchBtn = (e) => {
     e.preventDefault()
@@ -20,7 +20,7 @@ const Home = () => {
     <div>
       <Banner handleSearchBtn={handleSearchBtn}></Banner>
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 md:grid-cols-2 justify-items-center mt-12">
-        {donations?.map((donation) => (
+        {searchData?.map((donation) => (
           <DonationsALl key={donation.id} donation={donation}></DonationsALl>
         ))}
       </div>
