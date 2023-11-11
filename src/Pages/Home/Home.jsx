@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div>
       <Banner></Banner>
-      <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 md:grid-cols-2 justify-items-center mt-12">
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 md:grid-cols-2 justify-items-center mt-12">
         {donations.map((donation) => (
           <DonationsALl key={donation.id} donation={donation}></DonationsALl>
         ))}

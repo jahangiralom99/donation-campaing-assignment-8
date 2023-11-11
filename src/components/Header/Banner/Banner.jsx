@@ -1,8 +1,8 @@
 import "./Banner.css";
 const Banner = () => {
   return (
-    <div class="hero min-h-screen banner-img ">
-      <div class="hero-overlay bg-opacity-60 flex items-center justify-center h-screen">
+    <div className="hero min-h-screen banner-img ">
+      <div className="hero-overlay bg-opacity-60 flex items-center justify-center h-screen">
         <div className="text-center">
           <h1 className="text-5xl font-bold text-white">
             I Grow By Helping People In Need
