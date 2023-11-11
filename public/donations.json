@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "picture": "https://i.ibb.co/jvTJg9M/Health.png",
+    "title": "Clean water for children",
+    "category": "Health",
+    "category_bg": "#3498db",
+    "card_bg": "#0052ff26",
+    "text_color": "#0052FF",
+    "description": "Maintaining good health is essential for overall well-being and a fulfilling life. Adopting a balanced and nutritious diet, rich in fruits, vegetables, whole grains, and lean proteins, provides the body with the necessary nutrients to function optimally. Regular physical activity is equally important.",
+    "price": "$299"
+  },
+  {
+    "id": 2,
+    "picture": "https://i.ibb.co/c2DHvms/Education.png",
+    "title": "Good Education",
+    "category": "Education",
+    "category_bg": "#ff444b33",
+    "card_bg": "#ff444b26",
+    "text_color": "#FF444A",
+    "description": "There are many things that can be done to ensure that all people have access to a good education. Governments can invest in public schools, provide financial assistance to students, and make sure that all schools have qualified teachers and resources. Families can support their children's education by creating a learning environment at home and helping them with their schoolwork.",
+    "price": "$280"
+  },
+  {
+    "id": 3,
+    "picture": "https://i.ibb.co/GT3pDHF/Rectangle-4287.png",
+    "title": "Used Clothing Drive",
+    "category": "Clothing",
+    "category_bg": " #79c23f33",
+    "card_bg": "#79c23f26",
+    "text_color": "#79C23F",
+    "description": "Organizing a used clothing drive is a wonderful way to make a positive impact on both the community and the environment. By encouraging individuals to donate gently worn clothing that they no longer need, we not only extend the lifespan of these garments but also provide a valuable resource to those in need.",
+    "price": "$200"
+  },
+  {
+    "id": 4,
+    "picture": "https://i.ibb.co/0FTn4bn/Rectangle-4287-2.png",
+    "title": "Better Food for Everyone",
+    "category": "Good",
+    "category_bg": "#f8714733",
+    "card_bg": "#f8714733",
+    "text_color": "#F87147",
+    "description": "Advocating for better food for everyone involves a commitment to fostering a healthier, more sustainable global food system. By promoting access to nutritious and wholesome food choices",
+    "price": "$235"
+  },
+  {
+    "id": 5,
+    "picture": "https://i.ibb.co/0FTn4bn/Rectangle-4287-2.png",
+    "title": "Better Food for Everyone",
+    "category": "Good",
+    "category_bg": "#f8714733",
+    "card_bg": "#f8714733",
+    "text_color": "#F87147",
+    "description": "Advocating for better food for everyone involves a commitment to fostering a healthier, more sustainable global food system. By promoting access to nutritious and wholesome food choices",
+    "price": "$235"
+  },
+  {
+    "id": 6,
+    "picture": "https://i.ibb.co/GT3pDHF/Rectangle-4287.png",
+    "title": "Used Clothing Drive",
+    "category": "Clothing",
+    "category_bg": " #79c23f33",
+    "card_bg": "#79c23f26",
+    "text_color": "#79C23F",
+    "description": "Organizing a used clothing drive is a wonderful way to make a positive impact on both the community and the environment. By encouraging individuals to donate gently worn clothing that they no longer need, we not only extend the lifespan of these garments but also provide a valuable resource to those in need.",
+    "price": "$200"
+  },
+  {
+    "id": 7,
+    "picture": "https://i.ibb.co/c2DHvms/Education.png",
+    "title": "Good Education",
+    "category": "Education",
+    "category_bg": "#ff444b33",
+    "card_bg": "#ff444b26",
+    "text_color": "#FF444A",
+    "description": "There are many things that can be done to ensure that all people have access to a good education. Governments can invest in public schools, provide financial assistance to students, and make sure that all schools have qualified teachers and resources. Families can support their children's education by creating a learning environment at home and helping them with their schoolwork.",
+    "price": "$280"
+  },
+  {
+    "id": 8,
+    "picture": "https://i.ibb.co/jvTJg9M/Health.png",
+    "title": "Clean water for children",
+    "category": "Health",
+    "category_bg": "#3498db",
+    "card_bg": "#0052ff26",
+    "text_color": "#0052FF",
+    "description": "Maintaining good health is essential for overall well-being and a fulfilling life. Adopting a balanced and nutritious diet, rich in fruits, vegetables, whole grains, and lean proteins, provides the body with the necessary nutrients to function optimally. Regular physical activity is equally important.",
+    "price": "$299"
+  },
+  {
+    "id": 9,
+    "picture": "https://i.ibb.co/jvTJg9M/Health.png",
+    "title": "Clean water for children",
+    "category": "Health",
+    "category_bg": "#3498db",
+    "card_bg": "#0052ff26",
+    "text_color": "#0052FF",
+    "description": "Maintaining good health is essential for overall well-being and a fulfilling life. Adopting a balanced and nutritious diet, rich in fruits, vegetables, whole grains, and lean proteins, provides the body with the necessary nutrients to function optimally. Regular physical activity is equally important.",
+    "price": "$299"
+  },
+  {
+    "id": 10,
+    "picture": "https://i.ibb.co/c2DHvms/Education.png",
+    "title": "Good Education",
+    "category": "Education",
+    "category_bg": "#ff444b33",
+    "card_bg": "#ff444b26",
+    "text_color": "#FF444A",
+    "description": "There are many things that can be done to ensure that all people have access to a good education. Governments can invest in public schools, provide financial assistance to students, and make sure that all schools have qualified teachers and resources. Families can support their children's education by creating a learning environment at home and helping them with their schoolwork.",
+    "price": "$280"
+  },
+  {
+    "id": 11,
+    "picture": "https://i.ibb.co/GT3pDHF/Rectangle-4287.png",
+    "title": "Used Clothing Drive",
+    "category": "Clothing",
+    "category_bg": " #79c23f33",
+    "card_bg": "#79c23f26",
+    "text_color": "#79C23F",
+    "description": "Organizing a used clothing drive is a wonderful way to make a positive impact on both the community and the environment. By encouraging individuals to donate gently worn clothing that they no longer need, we not only extend the lifespan of these garments but also provide a valuable resource to those in need.",
+    "price": "$200"
+  },
+  {
+    "id": 12,
+    "picture": "https://i.ibb.co/0FTn4bn/Rectangle-4287-2.png",
+    "title": "Better Food for Everyone",
+    "category": "Good",
+    "category_bg": "#f8714733",
+    "card_bg": "#f8714733",
+    "text_color": "#F87147",
+    "description": "Advocating for better food for everyone involves a commitment to fostering a healthier, more sustainable global food system. By promoting access to nutritious and wholesome food choices",
+    "price": "$235"
+  }
+]
