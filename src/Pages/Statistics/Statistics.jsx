@@ -1,14 +1,28 @@
+import { useState } from "react";
 import { Cell, Pie, PieChart } from "recharts";
 
 const Statistics = () => {
+  const [items, setItems] = useState(0);
+
+  const donateItems = JSON.parse(localStorage.getItem([]));
+ 
+  // else {
+  //   let percentage = (0 / 12) * 100;
+  //   let fix = parseFloat(percentage.toFixed(2))
+  // }
+
+  // console.log(items, donateItems);
+
+
+  let total = 100;
   const data = [
     {
       name: "Group A",
-      value: 50,
+      value: 30.01,
     },
     {
       name: "Group B",
-      value: 100,
+      value: total,
     },
   ];
   return (

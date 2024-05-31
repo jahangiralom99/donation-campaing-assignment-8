@@ -2,9 +2,9 @@ import "./Banner.css";
 const Banner = ({handleSearchBtn}) => {
   return (
     <div className="hero min-h-screen banner-img ">
-      <div className="hero-overlay bg-opacity-60 flex items-center justify-center h-screen">
-        <div className="text-center">
-          <h1 className="text-5xl font-bold text-white">
+      <div className="hero-overlay bg-[#fff] bg-opacity-60 flex items-center justify-center h-screen ">
+        <div className="text-center ">
+          <h1 className="text-5xl font-bold text-black">
             I Grow By Helping People In Need
           </h1>
           <form onSubmit={handleSearchBtn}>

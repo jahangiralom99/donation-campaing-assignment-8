@@ -3,7 +3,6 @@ import { useLoaderData, useParams } from "react-router-dom";
 import swal from "sweetalert";
 
 const SingleDonationCard = () => {
-
   const [donate, setDonate] = useState({});
 
   const donations = useLoaderData();
@@ -23,7 +22,7 @@ const SingleDonationCard = () => {
     text_color,
     description,
     price,
-    id
+    id,
   } = donate || {};
 
   const dynamicStyles = {
@@ -32,31 +31,24 @@ const SingleDonationCard = () => {
     },
   };
 
-
-
   const handleDonatePriceBtn = () => {
-    const addedDonateItem = []
-    const donateItems = JSON.parse(localStorage.getItem('donate'));
+    const addedDonateItem = [];
+    const donateItems = JSON.parse(localStorage.getItem("donate"));
     if (!donateItems) {
       addedDonateItem.push(donate);
-      localStorage.setItem('donate', JSON.stringify(addedDonateItem));
+      localStorage.setItem("donate", JSON.stringify(addedDonateItem));
       swal("Good job!", "Your Donate Done!", "success");
-    }
-    else {
-      const isExits = donateItems.find(donate => donate.id === id)
+    } else {
+      const isExits = donateItems.find((donate) => donate.id === id);
       if (!isExits) {
-        addedDonateItem.push(...donateItems, donate)
-        localStorage.setItem('donate', JSON.stringify(addedDonateItem));
+        addedDonateItem.push(...donateItems, donate);
+        localStorage.setItem("donate", JSON.stringify(addedDonateItem));
         swal("Good job!", "You clicked the button!", "success");
-      }
-      else {
+      } else {
         return swal("Waring!", "You All Ready added this items!", "warning");
       }
-      
     }
-
-  }
-
+  };
 
   return (
     <div className="flex items-center justify-center">
